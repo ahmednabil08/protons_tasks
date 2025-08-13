@@ -62,3 +62,24 @@ for customer in customers:
         regular_queue.append(customer)
 serve = vip_queue + regular_queue
 print(serve)
+# ////////////////////////////////////////////////////////////////////
+# Task10 Ex.4
+signups = [
+("Liam", "Science"),
+("Emma", "Art"),
+("Olivia", "Science"),
+("Liam", "Art"), 
+("Noah", "Art"),
+("Emma", "Science")
+]
+checked = set()
+science_club = set()
+art_club = set()
+for name, subject in signups:
+    if name not in checked:
+        checked.add(name)
+        if subject == "Science":
+            print(f"{name} is in {subject} club")
+        elif subject == "Art":
+            print(f"{name} is in {subject} club")
+
